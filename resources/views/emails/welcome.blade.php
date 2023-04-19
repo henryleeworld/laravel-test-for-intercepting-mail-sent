@@ -1,12 +1,12 @@
 @component('mail::message')
-# Welcome
+# {{ __('Welcome') }}
 
-Hi,
+{{ __('Hi,') }}
 
-Welcome to Henry World. We’re thrilled to see you here!
+{{ __('Welcome to Henry World. We’re thrilled to see you here!') }}
 
-We’re confident that Henry World will help you test for intercepting mail sent.
+{{ __('We’re confident that Henry World will help you test for intercepting mail sent.') }}
 
-Thanks,<br>
+{{ __('Thanks,') }}<br>
 {{ config('app.name') }}
 @endcomponent

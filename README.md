@@ -1,4 +1,4 @@
-# Laravel 9 測試中途截取電子郵件寄送
+# Laravel 10 測試中途截取電子郵件寄送
 
 引入 kirschbaum-development 的 mail-intercept 套件來擴增測試中途截取電子郵件寄送，電子郵件中途截取是一種通過截取而不是偽造電子郵件來測試郵件的新方法，因此我們可以對其進行剖析、顛倒並檢查所有內容。
 
@@ -24,5 +24,5 @@ $ php artisan test --testsuite=Unit
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/QTSg4zy.png)
+![](https://i.imgur.com/svL5bEk.png)
 > 單元測試電子郵件寄送方法
