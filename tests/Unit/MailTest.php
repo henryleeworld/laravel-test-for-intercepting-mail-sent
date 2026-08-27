@@ -3,8 +3,8 @@
 namespace Tests\Unit;
 
 use App\Mail\WelcomeMail;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Foundation\Testing\WithFaker;
+use Illuminate\Support\Facades\Mail;
 use KirschbaumDevelopment\MailIntercept\WithMailInterceptor;
 use Tests\TestCase;
 

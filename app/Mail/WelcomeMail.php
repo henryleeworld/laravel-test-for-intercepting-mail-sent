@@ -3,8 +3,8 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
+use Illuminate\Mail\Mailables\Content;
 use Illuminate\Queue\SerializesModels;
 
 class WelcomeMail extends Mailable
@@ -13,8 +13,6 @@ class WelcomeMail extends Mailable
 
     /**
      * Create a new message instance.
-     *
-     * @return void
      */
     public function __construct()
     {
@@ -22,12 +20,12 @@ class WelcomeMail extends Mailable
     }
 
     /**
-     * Build the message.
-     *
-     * @return $this
+     * Get the message content definition.
      */
-    public function build()
+    public function content(): Content
     {
-        return $this->markdown('emails.welcome');
+        return new Content(
+            markdown: 'emails.welcome',
+        );
     }
 }
